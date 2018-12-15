@@ -1,0 +1,57 @@
+aside {
+  padding: 2px;
+}
+
+.sidebar-menuItem {
+  color: white;
+  margin-bottom: 2px;
+}
+
+.sidebar-menuItem:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+.sidebar-menuItem.profit {
+  background-color: rgb(0, 180, 0);
+}
+
+.sidebar-menuItem.profit:hover {
+  background-color: rgb(0, 206, 0);
+}
+
+.sidebar-menuItem.expend {
+  background-color: rgb(204, 0, 0);
+}
+
+.sidebar-menuItem.expend:hover {
+  background-color: rgb(223, 0, 0);
+}
+
+.sidebar-menuItem.scores {
+  background-color: rgb(0, 98, 211);
+}
+
+.sidebar-menuItem.scores:hover {
+  background-color: rgb(37, 139, 255);
+}
+
+aside li {
+  width: 100%;
+  padding: 5px 10px;
+  cursor: pointer;
+  user-select: none;
+  background: rgb(238, 238, 238);
+  margin-bottom: 2px;
+  /* margin: 2px 0; */
+}
+
+aside li:hover {
+  background: rgb(216, 216, 216);
+}
+
+aside ul {
+  margin-bottom: 2px;
+  border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+

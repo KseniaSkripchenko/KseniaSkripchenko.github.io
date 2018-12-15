@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: sans-serif;
+  transition: 0.3s;
+  color: #272727;
+  outline: none;
+}
+
+html {
+  height: 100%;
+  background: white;
+}
+
+body {
+  min-height: 1px;
+  height: 100%;
+  width: 100%;
+  background: #f5f5f5;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer"
+  ;
+}
+
+header {
+  grid-area: header;
+  background: #fcfcfc;
+  box-shadow: #00000030 0px 2px 4px 0px;
+  border-bottom: 1px solid rgb(227, 227, 227);
+}
+
+nav {
+  min-height: 70px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header a {
+  font-size: 20px;
+  color: #959595;
+}
+
+header a:hover {
+  color: #c6c6c6;
+}
+
+.currentAdress, .currentAdress:hover {
+  color: #3BDA00;
+}
+
+main {
+  grid-area: main;
+  padding: 0 10px;
+}
+
+main > div {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: 
+  "sidebar content"
+  ;
+  grid-gap: 15px;
+  padding-top: 15px;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+main > div section {
+  grid-area: content;
+}
+
+aside , main > div section {
+  background: white;
+  box-shadow: #00000030 0px 0px 4px 2px;
+  border: 1px solid rgb(227, 227, 227);
+  border-top: none;
+  border-radius: 4px;
+}
+
+footer {
+  grid-area: footer;
+  color: #c1c1c8;
+  font-size: 13px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.sidebar-menuItem {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.mainTitle {
+  text-align: center;
+  margin: 20px 0 40px;
+  color: #292929;
+}
+
+/* #primary-1 { background-color: #3BDA00}
+#primary-2 { background-color: #4AA329}
+#primary-3 { background-color: #268E00}
+#primary-4 { background-color: #6BEC3B}
+#primary-5 { background-color: #8EEC6A}
+
+#secondary-a-1 { background-color: #FF6200}
+#secondary-a-2 { background-color: #BF6730}
+#secondary-a-3 { background-color: #A63F00}
+#secondary-a-4 { background-color: #FF8940}
+#secondary-a-5 { background-color: #FFA873}
+
+#secondary-b-1 { background-color: #BE008A}
+#secondary-b-2 { background-color: #8F2471}
+#secondary-b-3 { background-color: #7C005A}
+#secondary-b-4 { background-color: #DF38B1}
+#secondary-b-5 { background-color: #DF64BD} */
